@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nudge — Support</title>
+<style>
+  :root {
+    --paper: #F7F4EC;
+    --deep-green: #2C4E3B;
+    --sage-green: #3E6B52;
+    --amber: #E2954B;
+    --route-gray: #C7BFA6;
+    --ink: #3A362E;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.6;
+  }
+
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 72px 24px 96px;
+  }
+
+  header {
+    margin-bottom: 56px;
+  }
+
+  .logotype {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 42px;
+    color: var(--deep-green);
+    margin: 0;
+  }
+
+  .tagline {
+    margin: 6px 0 0;
+    color: var(--sage-green);
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 20px;
+    color: var(--deep-green);
+    margin: 48px 0 12px;
+  }
+
+  p {
+    font-size: 16px;
+    max-width: 60ch;
+  }
+
+  .card {
+    background: #FFFFFF;
+    border: 1px solid var(--route-gray);
+    border-radius: 14px;
+    padding: 28px 32px;
+    margin-top: 16px;
+  }
+
+  .email-button {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 13px 28px;
+    background: var(--sage-green);
+    color: var(--paper);
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .email-button:hover {
+    background: var(--deep-green);
+  }
+
+  dl {
+    margin: 0;
+  }
+
+  dt {
+    font-weight: 600;
+    color: var(--deep-green);
+    margin-top: 24px;
+  }
+
+  dt:first-child {
+    margin-top: 0;
+  }
+
+  dd {
+    margin: 6px 0 0;
+    color: var(--ink);
+  }
+
+  footer {
+    margin-top: 72px;
+    padding-top: 24px;
+    border-top: 1px solid var(--route-gray);
+    font-size: 13px;
+    color: var(--sage-green);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1C1B18;
+      --ink: #EDE9DF;
+    }
+    .card {
+      background: #26241F;
+      border-color: #423E33;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="logotype">Nudge</p>
+      <p class="tagline">Din inköpslista, nära dig</p>
+    </header>
+
+    <p>
+      Nudge är inköpslistan som påminner dig i rätt ögonblick — när du
+      faktiskt är vid butiken. Koppla varor till dina favoritkedjor eller
+      specifika butiker och få en notis automatiskt när du är i närheten.
+    </p>
+
+    <h2>Kontakta support</h2>
+    <div class="card">
+      <p style="margin-top: 0;">
+        Frågor, buggar, eller förslag på funktioner — hör gärna av dig.
+        Vi svarar normalt inom ett par dagar.
+      </p>
+      <a class="email-button" href="mailto:dennis@lodh.se">Skicka e-post</a>
+    </div>
+
+    <h2>Vanliga frågor</h2>
+    <div class="card">
+      <dl>
+        <dt>Jag får inga platsnotiser — vad kan jag göra?</dt>
+        <dd>
+          Kontrollera att Nudge har "Alltid"-behörighet för plats under
+          Inställningar → Nudge → Plats på din iPhone. Utan den behörigheten
+          kan appen inte skicka påminnelser när skärmen är låst eller appen
+          stängd.
+        </dd>
+
+        <dt>Kan jag dela en lista med familj eller vänner?</dt>
+        <dd>
+          Ja. Öppna en lista → "…"-menyn i verktygsfältet → "Dela med person
+          (redigera tillsammans)". Ni kan sedan redigera samma lista
+          gemensamt.
+        </dd>
+
+        <dt>Hur tar jag bort mina uppgifter?</dt>
+        <dd>
+          Radera appen från din enhet för att ta bort all lokalt sparad
+          data. Delade listor lagras via Apples egen CloudKit-tjänst under
+          ditt Apple-ID.
+        </dd>
+      </dl>
+    </div>
+
+    <footer>
+      © 2026
+    </footer>
+  </div>
+</body>
+</html>
