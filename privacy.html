@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nudge — Integritetspolicy</title>
+<style>
+  :root {
+    --paper: #F7F4EC;
+    --deep-green: #2C4E3B;
+    --sage-green: #3E6B52;
+    --amber: #E2954B;
+    --route-gray: #C7BFA6;
+    --ink: #3A362E;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 72px 24px 96px; }
+  header { margin-bottom: 40px; }
+  .logotype {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 42px;
+    color: var(--deep-green);
+    margin: 0;
+  }
+  .updated { color: var(--sage-green); font-size: 14px; margin-top: 6px; }
+  h2 { font-size: 19px; color: var(--deep-green); margin: 40px 0 10px; }
+  p, li { font-size: 16px; max-width: 62ch; }
+  ul { padding-left: 22px; }
+  .card {
+    background: #FFFFFF;
+    border: 1px solid var(--route-gray);
+    border-radius: 14px;
+    padding: 24px 28px;
+    margin-top: 12px;
+  }
+  .email-button {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 13px 28px;
+    background: var(--sage-green);
+    color: var(--paper);
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  table { border-collapse: collapse; width: 100%; margin-top: 8px; }
+  th, td { text-align: left; padding: 8px 10px; font-size: 14px; border-bottom: 1px solid var(--route-gray); }
+  th { color: var(--deep-green); }
+  footer {
+    margin-top: 72px;
+    padding-top: 24px;
+    border-top: 1px solid var(--route-gray);
+    font-size: 13px;
+    color: var(--sage-green);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #1C1B18; --ink: #EDE9DF; }
+    .card { background: #26241F; border-color: #423E33; }
+    th, td { border-color: #423E33; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="logotype">Nudge</p>
+      <p class="updated">Integritetspolicy — senast uppdaterad 2026</p>
+    </header>
+
+    <p>
+      Nudge är byggd för att fungera med så lite datainsamling som möjligt.
+      Den här sidan förklarar exakt vilken information appen använder, var
+      den lagras, och vad som aldrig samlas in.
+    </p>
+
+    <h2>Vad Nudge samlar in</h2>
+    <div class="card">
+      <table>
+        <tr><th>Data</th><th>Varför</th><th>Var den lagras</th></tr>
+        <tr>
+          <td>Din plats</td>
+          <td>För att skicka en påminnelse när du är nära en butik på din lista</td>
+          <td>Endast på din enhet, eller i ditt eget iCloud-konto om du delar en lista</td>
+        </tr>
+        <tr>
+          <td>Dina listor och varor</td>
+          <td>Kärnfunktionen i appen</td>
+          <td>Ditt eget iCloud-konto (Apple CloudKit)</td>
+        </tr>
+        <tr>
+          <td>Kameraflöde vid skanning</td>
+          <td>Läsa av recept och streckkoder</td>
+          <td>Bearbetas direkt på enheten — sparas eller skickas aldrig någonstans</td>
+        </tr>
+        <tr>
+          <td>Streckkodsnummer</td>
+          <td>Slå upp produktnamn</td>
+          <td>Skickas till Open Food Facts (öppen, gratis produktdatabas) — bara själva
+            siffrorna, ingen personlig information</td>
+        </tr>
+      </table>
+    </div>
+
+    <h2>Vad Nudge INTE gör</h2>
+    <div class="card">
+      <ul>
+        <li>Ingen reklam, ingen spårning för marknadsföringssyfte</li>
+        <li>Säljer eller delar aldrig din data med tredje part</li>
+        <li>Ingen egen server — all din data lagras i ditt eget Apple-konto, inte hos oss</li>
+        <li>Text du skriver in i appen (varunamn, listnamn) skickas aldrig till någon
+          extern databas — bara den skannade streckkoden gör det, i förekommande fall</li>
+      </ul>
+    </div>
+
+    <h2>AI-funktioner</h2>
+    <p>
+      Den automatiska kategoriseringen av varor använder Apples Foundation
+      Models — en språkmodell som körs helt på din enhet. Ingenting skickas
+      över internet för den här funktionen.
+    </p>
+
+    <h2>Delning med andra</h2>
+    <p>
+      Delar du en lista med en annan person sker det via Apples egen CloudKit-
+      delningsfunktion. Den personen får då tillgång till den specifika listan
+      du valt att dela — inget annat i appen.
+    </p>
+
+    <h2>Dina rättigheter</h2>
+    <p>
+      Radera appen från din enhet för att ta bort all lokalt sparad data.
+      Eftersom listor och platsdata lagras i ditt eget iCloud-konto (inte hos
+      oss), har du redan full kontroll över den via dina egna Apple-
+      inställningar.
+    </p>
+
+    <h2>Kontakt</h2>
+    <div class="card">
+      <p style="margin-top: 0;">
+        Frågor om den här policyn eller om din data — hör gärna av dig.
+      </p>
+      <a class="email-button" href="mailto:dennis@lodh.se">Skicka e-post</a>
+    </div>
+
+    <footer>
+      © 2026
+    </footer>
+  </div>
+</body>
+</html>
